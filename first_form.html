@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+<html>
+<!-- the title will appear on the page-->
+<head>
+<title>Personal Interest Info</title>
+</head>
+<body>
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="http://google.co.in">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="center">
+<!--Adds a heading to the form-->
+<h1>Personal Information form</h1>
+Enter your name:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" size=35 maxlength=35 value=""></br></br>
+Enter your occupation:
+<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+What are you passionate about???
+<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+Tell us a little about yourself:
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=50 rows=5></textarea> </br> </br>
+Do you exercise at home?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</br> </br>
+If yes then what do you do?
+<input type="checkbox" name="Cardio">Cardio
+<input type="checkbox" name="HIIT">HIIT
+<input type="checkbox" name="Run">Run
+<input type="checkbox" name="Jog">Jog
+<input type="checkbox" name="Other">Other
+<input type="text" name="UserName" size=35 maxlength=35 value=""></br> </br>
+</p>
+
+Do you like to read?
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</br> </br>
+If yes, how do you like to read about your favorite topics?
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="Books">Books
+<input type="checkbox" name="Web">Online resources
+<input type="checkbox" name="Phone">Phone apps
+<input type="checkbox" name="Magazines">Magazines</br> </br>
+</p>
+Are you a movie buff?
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</br> </br>
+yesss???? What genre of movies do you like?
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="moviepref" ><option>
+<option value=1 selected = "true">comedy
+<option value=2 >romance
+<option value=3 >thriller
+<option value=4 >horror
+<option value=5 >biopic
+</select>
+</br></br>
+<!--submits the information entered in the form by the user -->
+<input type=submit value="Submit form">
+</div>
+</form>
+</body>
+</html>
